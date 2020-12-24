@@ -26,7 +26,6 @@ const Payment = () => {
   const total = handleSumTotal(cart);
 
   const handlePaymentSuccess = (data) => {
-    console.log(data);
     if (data.status === 'COMPLETED') {
       const newOrder = {
         buyer,
